@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover E-Book Estetik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cover-wrapper {
+            /* Latar belakang pemandangan */
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1544778408-251f92e92c57?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Kotak Kaca (Glassmorphism) */
+        .glass-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            color: white;
+            max-width: 600px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .author {
+            border-top: 1px solid rgba(255,255,255,0.3);
+            padding-top: 20px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #18bc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #15a588;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cover-wrapper">
+        <div class="glass-box">
+            <div class="subtitle">Kompilasi Hadis Tematik</div>
+            <h1>Bullying dalam <br>Perspektif Hadis</h1>
+            <p class="subtitle">Kajian Nilai-Nilai Islam tentang Larangan Menyakiti Sesama dan Akhlak Mulia</p>
+            
+            <div class="author">
+                <strong>Muhammad Ikhsan Maulana Rohis</strong><br>
+                <small>UIN Sultan Maulana Hasanuddin Banten</small>
+            </div>
+            
+            <a href="bab1.html" target="content_frame" class="btn">Mulai Membaca</a>
+        </div>
+    </div>
+
+</body>
+</html>

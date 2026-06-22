@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Book: Bullying dalam Perspektif Hadis</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f7f6;
+        }
+
+        /* Header & Navigasi */
+        header {
+            background-color: #1a252f;
+            color: #ffffff;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        h1.site-title {
+            margin: 0;
+            font-family: 'Merriweather', serif;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            color: #18bc9c;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 18px;
+            display: block;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            background-color: #18bc9c;
+        }
+
+        /* Dropdown Styling */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background: #ffffff;
+            top: 100%;
+            left: 0;
+            width: 260px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 0 0 5px 5px;
+            padding: 5px 0;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            color: #2c3e50;
+            text-transform: none;
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            font-weight: 500;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #f8f9fa;
+            color: #18bc9c;
+        }
+
+        /* Frame Content */
+        iframe {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="site-title">Hadis Tematik</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="content_frame">Beranda</a></li>
+                <li><a href="kata_pengantar.html" target="content_frame">Kata Pengantar</a></li>
+                <li>
+                    <a href="#">Daftar Isi ▾</a>
+                    <ul>
+                        <li><a href="bab1.html" target="content_frame">BAB I: Prinsip Dasar</a></li>
+                        <li><a href="bab2.html" target="content_frame">BAB II: Bullying Verbal</a></li>
+                        <li><a href="bab3.html" target="content_frame">BAB III: Bullying Fisik</a></li>
+                        <li><a href="bab4.html" target="content_frame">BAB IV: Nilai Akhlak</a></li>
+                        <li><a href="daftar_pustaka.html" target="content_frame">Daftar Pustaka</a></li>
+                    </ul>
+                </li>
+                <li><a href="profil.html" target="content_frame">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe name="content_frame" src="home.html"></iframe>
+
+</body>
+</html>
